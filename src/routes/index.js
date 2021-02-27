@@ -1,12 +1,14 @@
 import React from "react"
-import { BrownserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
+import Home from '../pages/Home';
 
 const Routes = () => (
-    <BrownserRouter>
+    <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={} />
+            <Route path="/" component={Home} />
         </Switch>
-    </BrownserRouter>
+    </BrowserRouter>
 );
 
 export default Routes;
